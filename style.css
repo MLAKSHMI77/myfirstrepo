@@ -1,1 +1,33 @@
-this is style file
+def analyze_temperatures(temps_celsius):
+    """Converts a list of Celsius temperatures to Fahrenheit and checks for warm days."""
+    warm_days = []
+    
+    for temp in temps_celsius:
+        fahrenheit = (temp * 9/5) + 32
+        print(f"{temp}°C is {fahrenheit:.1f}°F")
+        
+        if temp >= 25:
+            warm_days.append(temp)
+            
+    return warm_days
+
+# Sample data
+weekly_temps = [21, 24, 27, 29, 22, 19, 26]
+
+# Run the function
+hot_days = analyze_temperatures(weekly_temps)
+print(f"\nNumber of warm days (25°C or above): {len(hot_days)}")
+Use code with caution.
+
+What This Code Shows
+
+• Functions (def). Encapsulates reusable logic that takes an input (temps_celsius) and returns a result (warm_days).
+• Loops (for). Iterates through each item in a list one by one.
+• Conditionals (if). Filters data based on a specific rule (temp >= 25).
+• F-strings (f"..."). Formats variables directly inside text strings for clean output.
+You can explore more beginner-friendly examples on W3Schools or browse full practice problems on Programiz.
+If you are looking for something specific, tell me:
+• Your experience level (beginner, intermediate, advanced)
+• The topic or use case (web scraping, data analysis, automation, games, APIs)
+I can write a tailored example for you.
+                   
